@@ -1,0 +1,72 @@
+.first-screen {
+  background-image: url(../img/first-screen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 28px;
+    margin-bottom: 103px;
+    @media (max-width: 900px) {
+      margin-bottom: 70px;
+    }
+    .logo {
+      font-family: 'Lora', serif;
+      font-size: 26px;
+      color: $accentColor;
+      text-decoration: none;
+    }
+    .nav {
+      text-transform: uppercase;
+      @media (max-width: 900px) {
+        display: none;
+      }
+      a {
+        text-decoration: none;
+        color: $accentColor;
+        margin-right: 40px;
+      }
+      a:last-child {
+        margin-right: 0;
+      }
+    }
+    .burger-menu {
+      display: none;
+      @media (max-width: 900px) {
+        display: block;
+      }
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .first-screen-wrapper {
+    color: $accentColor;
+    text-align: center;
+    .title {
+      font-size: 50px;
+      font-family: 'Lora', serif;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      @media (max-width: 600px) {
+        font-size: 30px;
+      }
+    }
+    .subtitle {
+      font-size: 17px;
+      margin-bottom: 31px;
+    }
+    .btn {
+      background: $btnColor;
+      color: $accentColor;
+      border-radius: 3px;
+      border: none;
+      line-height: 20px;
+      padding: 13px 21px;
+    }
+  }
+}
